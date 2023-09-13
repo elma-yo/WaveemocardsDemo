@@ -1,0 +1,74 @@
+.login {
+    .img {
+        img {
+            display: block;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+    .form {
+        width: 80%;
+    }
+    .profile {
+        font-size: 88px;
+    }
+    h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+    .c-btn-outline-main, button {
+        font-size: 20px;
+    }
+    .or {
+        position: relative;
+        color: $gray-500;
+        text-align: center;
+        font-weight: bold;
+    }
+    .or::before {
+        position: absolute;
+        content: "";
+        width: 45%;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        background-color: $gray-400;
+    }
+    .or::after {
+        position: absolute;
+        content: "";
+        width: 45%;
+        height: 1px;
+        top: 50%;
+        right: 0;
+        background-color: $gray-400;
+    }
+    .click-me {
+        position: relative;
+        color: $pink-tint01;
+        text-align: center;
+        font-weight: bold;
+    }
+    .click-me::before {
+        position: absolute;
+        content: "";
+        width: 38%;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        background-color: $pink-tint02;
+    }
+    .click-me::after {
+        position: absolute;
+        content: "";
+        width: 38%;
+        height: 2px;
+        top: 50%;
+        right: 0;
+        background-color: $pink-tint02;
+    }
+    .click-me:hover {
+        color: $pink;
+    }
+}

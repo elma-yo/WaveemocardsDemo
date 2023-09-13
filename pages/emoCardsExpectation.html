@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>浪潮情緒卡｜期待</title>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <%- include('./layout/headerLoggedIn'); -%>
+
+    <main>
+      <div class="container py-16 pt-72" id="top">
+        <div class="titleBar d-flex justify-content-between align-items-center">
+          <h2>期待</h2>
+          <div class="nav-btn d-flex justify-content-end">
+              <a class="btn btn-outline-main c-btn" href="emoCardsClassified.html">返回</a>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap mb-72">
+          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation01">
+              <p>期&nbsp;待</p>
+              <div class="img-box">
+                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction01-expect.svg" alt="期待">
+              </div>
+          </button>
+          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation " data-bs-toggle="modal" data-bs-target="#expectation02">
+              <p class="px-0">有信心</p>
+              <div class="img-box">
+                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction02-confidence.svg" alt="有信心">
+              </div>
+          </button>
+          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation03">
+              <p>充滿興趣</p>
+              <div class="img-box">
+                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction03-interested.svg" alt="充滿興趣">
+              </div>
+          </button>
+          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation04">
+              <p>渴望</p>
+              <div class="img-box">
+                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction04-desire.svg" alt="渴望">
+              </div>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/floatButton') -%>
+    
+    <%- include('./layout/modalEmoCards'); -%>
+    <%- include('./layout/footer'); -%>
+
+    <%- include('./layout/baseJs'); -%>
+  </body>
+</html>
