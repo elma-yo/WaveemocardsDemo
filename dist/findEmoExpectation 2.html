@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>浪潮情緒卡｜期待</title>
+    <title>浪潮情緒卡｜找尋我的情緒｜分類探索｜期待</title>
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-c023d86a.js"></script>
-    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-a858a29e.css">
+    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-99ee66e6.js"></script>
+    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-00fedd05.css">
   </head>
   <body>
     <header class="header h-logined fixed-top">
@@ -16,36 +16,7 @@
         <h1>
             <a href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="回到首頁">浪潮情緒卡</a>
         </h1>
-        <div class="d-lg-none position-relative">
-            <button class="px-8 py-4 btn btn-main btn-hamburger border-0 rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="collapse" style="position: absolute; right: 0; top: 40px;" id="collapseExample">
-                <div class="p-0 card card-body rounded-2 border-2 border-main-tint01" style="width: 160px;">
-                    <ul>
-                        <li>
-                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="aboutEmotions.html">認識情緒</a>
-                        </li>
-                        <li>
-                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="findMyEmotions.html">找尋我的情緒</a>
-                        </li>
-                        <li>
-                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="myRecords.html">我的紀錄</a>
-                        </li>
-                        <li>
-                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="sharedByOthers.html">他人的分享</a>
-                        </li>
-                        <li>
-                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="account.html">我的帳戶</a>
-                        </li>
-                        <li>
-                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="#">登出</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <ul class="d-none d-lg-flex justify-content-between align-items-center mb-0 ps-0">
+        <ul class="d-flex justify-content-between align-items-center mb-0 ps-0">
             <li>
                 <a href="aboutEmotions.html" class="px-4 py-8" data-bs-toggle="tooltip" data-bs-placement="bottom" title="認識情緒與情緒卡">認識情緒</a>
             </li>
@@ -75,63 +46,156 @@
 </header>
 
     <main>
-      <div class="container py-16 pt-72" id="top">
-        <div class="titleBar d-flex justify-content-between align-items-center">
-          <h2>期待</h2>
-          <div class="nav-btn d-flex justify-content-end">
-              <a class="btn btn-outline-main c-btn" href="emoCardsClassified.html">返回</a>
-          </div>
+        <div class="container py-16 pt-72" id="top">
+            <!-- title bar -->
+            <div class="titleBar d-flex justify-content-between align-items-center">
+                <h2>期待</h2>
+                <div class="nav-btn d-flex justify-content-end">
+                    <a class="btn btn-outline-main c-btn" href="findEmoClassified.html">返回</a>
+                    <a class="ms-16 btn btn-main c-btn btn-goToMyCards" href="myEmoCardsHolder.html">
+                        <i class="bi bi-folder2"></i>
+                        <i class="bi bi-folder2-open"></i>
+                        <span class="ms-4">我的情緒卡夾</span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="mb-40 text-gray-550">
+                🔎 透過點擊 <i class="bi bi-plus-lg"></i>，將情緒新增進「我的情緒卡夾」中。
+            </p>
+
+            <!-- cards -->
+            <div class="d-flex flex-wrap mb-72">
+                <div class="position-relative me-24">
+                    <a class="position-absolute top-0 start-100 translate-middle btn-add-card-m"></a>
+                    <button type="button" class="class-card mb-12 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#addExpectation01">
+                        <p>期&nbsp;待</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction01-expect.svg" alt="期待">
+                        </div>
+                    </button>
+                </div>
+                <div class="position-relative me-24">
+                    <a class="position-absolute top-0 start-100 translate-middle btn-add-card-m"></a>
+                    <button type="button" class="class-card mb-12 bg-expectation link-gray-900 class-card-expectation " data-bs-toggle="modal" data-bs-target="#addExpectation02">
+                        <p class="px-0">有信心</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction02-confidence.svg" alt="有信心">
+                        </div>
+                    </button>
+                </div>
+                <div class="position-relative me-24">
+                    <a class="position-absolute top-0 start-100 translate-middle btn-add-card-m"></a>
+                    <button type="button" class="class-card mb-12 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#addExpectation03">
+                        <p>充滿興趣</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction03-interested.svg" alt="充滿興趣">
+                        </div>
+                    </button>
+                </div>
+                <div class="position-relative me-24">
+                    <a class="position-absolute top-0 start-100 translate-middle btn-add-card-m"></a>
+                    <button type="button" class="class-card mb-12 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#addExpectation04">
+                        <p>渴望</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction04-desire.svg" alt="渴望">
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="d-flex flex-wrap mb-72">
-          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation01">
-              <p>期&nbsp;待</p>
-              <div class="img-box">
-                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction01-expect.svg" alt="期待">
-              </div>
-          </button>
-          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation " data-bs-toggle="modal" data-bs-target="#expectation02">
-              <p class="px-0">有信心</p>
-              <div class="img-box">
-                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction02-confidence.svg" alt="有信心">
-              </div>
-          </button>
-          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation03">
-              <p>充滿興趣</p>
-              <div class="img-box">
-                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction03-interested.svg" alt="充滿興趣">
-              </div>
-          </button>
-          <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation04">
-              <p>渴望</p>
-              <div class="img-box">
-                <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction04-desire.svg" alt="渴望">
-              </div>
-          </button>
-        </div>
-      </div>
     </main>
 
     <!-- 浮動按鈕 -->
 <div class="me-12 mb-12" style="width: 60px; position: fixed; right: 0; bottom: 0; z-index: 1030;">
+    <a href="myEmoCardsHolder.html" type="button" class="mb-8 btn btn-main-tint01 rounded-circle shadow d-flex flex-column justify-content-center align-items-center link-white"
+    style="width: 60px; height: 60px;">
+            <i class="bi bi-folder-fill"></i>
+            <span class="fs-10 fw-bold">卡夾</span>
+    </a>
     <a href="#top" type="button" class="btn btn-main-tint01 rounded-circle shadow d-flex flex-column justify-content-center align-items-center"
     style="width: 60px; height: 60px;">
             <img src="/WaveemocardsDemo/assets/backToTop-1ea21c73.svg" alt="top">
             <span class="text-white fs-10 fw-bold">TOP</span>
     </a>
 </div>    
-    <!-- Modal -->
-<!-- 快樂類 -->
+    <footer class="footer py-48">
+    <div class="container">
+        <div class="row gap-40">
+            <!-- logo -->
+            <div class="col-2">
+                <!-- <a href="home.html"> -->
+                    <img class="w-50" src="/WaveemocardsDemo/assets/logo_footer-2fe4aa72.svg" alt="logo">
+                <!-- </a> -->
+            </div>
+            <!-- Developers -->
+            <div class="col-3">
+                <h3>開發團隊</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a class="d-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
+                            <span>Product Manager</span>
+                            <span>Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="d-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
+                            <span>Product Designer</span>
+                            <span>Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="d-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/" target="_blank">
+                            <span>Front-End Engineer</span>
+                            <span>Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="d-flex justify-content-between" href="https://www.linkedin.com/in/%E5%81%89%E5%87%B1-%E6%9E%97-668aaa204/" target="_blank">
+                            <span>Front-End Consultant</span>
+                            <span>Wei-Kai Lin</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="d-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
+                            <span>Database Developer</span>
+                            <span>Leon Wu</span>
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="d-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
+                            <span>Back-End Developer</span>
+                            <span>Leon Wu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-between" href="https://a8607125167.wixsite.com/mysite/about"  target="_blank">
+                            <span>Illustrator</span>
+                            <span>Yi-Wen Fang</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="col-3">
+                <a href="mailto:info@wavemocards.com">
+                    <h3>聯絡我們</h3>
+                    <span>info@wavemocards.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>    <!-- With Add Icon -->
+<!-- 快樂類 + -->
 <!-- 滿足 -->
-<div class="modal fade px-32" id="happy01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>滿足</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -150,16 +214,14 @@
     </div>
 </div>
 <!-- 快樂 -->
-<div class="modal fade px-32" id="happy02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>快樂</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -178,16 +240,14 @@
     </div>
 </div>
 <!-- 幸福 -->
-<div class="modal fade px-32" id="happy03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>幸福</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -206,16 +266,14 @@
     </div>
 </div>
 <!-- 自豪 -->
-<div class="modal fade px-32" id="happy04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>自豪</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -234,16 +292,14 @@
     </div>
 </div>
 <!-- 興奮 -->
-<div class="modal fade px-32" id="happy05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>興奮</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -262,16 +318,14 @@
     </div>
 </div>
 <!-- 痛快 -->
-<div class="modal fade px-32" id="happy06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>痛快</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -290,16 +344,14 @@
     </div>
 </div>
 <!-- 狂喜 -->
-<div class="modal fade px-32" id="happy07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHappy07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-happy">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>狂喜</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -318,18 +370,16 @@
     </div>
 </div>
 
-<!-- 期待纇 -->
+<!-- 期待纇 + -->
 <!-- 期待 -->
-<div class="modal fade px-32" id="expectation01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addExpectation01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-expectation">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>期待</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -348,16 +398,14 @@
     </div>
 </div>
 <!-- 有信心 -->
-<div class="modal fade px-32" id="expectation02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addExpectation02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-expectation">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>有信心</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -376,16 +424,14 @@
     </div>
 </div>
 <!-- 充滿興趣 -->
-<div class="modal fade px-32" id="expectation03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addExpectation03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-expectation">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>充滿興趣</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -404,16 +450,14 @@
     </div>
 </div>
 <!-- 渴望 -->
-<div class="modal fade px-32" id="expectation04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addExpectation04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-expectation">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>渴望</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -432,18 +476,16 @@
     </div>
 </div>
 
-<!-- 放鬆類 -->
+<!-- 安心類 + -->
 <!-- 舒服 -->
-<div class="modal fade px-32" id="relived01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addRelived01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-relived">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>舒服</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -462,16 +504,14 @@
     </div>
 </div>
 <!-- 放鬆 -->
-<div class="modal fade px-32" id="relived02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addRelived02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-relived">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>放鬆</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -490,16 +530,14 @@
     </div>
 </div>
 <!-- 平靜 -->
-<div class="modal fade px-32" id="relived03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addRelived03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-relived">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>平靜</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -518,16 +556,14 @@
     </div>
 </div>
 <!-- 安心 -->
-<div class="modal fade px-32" id="relived04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addRelived04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-relived">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>安心</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -546,16 +582,14 @@
     </div>
 </div>
 <!-- 自在 -->
-<div class="modal fade px-32" id="relived05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addRelived05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-relived">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>自在</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -574,16 +608,14 @@
     </div>
 </div>
 <!-- 信任 -->
-<div class="modal fade px-32" id="relived06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addRelived06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-relived">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>信任</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -602,18 +634,16 @@
     </div>
 </div>
 
-<!-- 不安類 -->
+<!-- 不安類 + -->
 <!-- 害羞 -->
-<div class="modal fade px-32" id="unstable01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>害羞</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -632,16 +662,14 @@
     </div>
 </div>
 <!-- 擔心 -->
-<div class="modal fade px-32" id="unstable02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>擔心</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -660,16 +688,14 @@
     </div>
 </div>
 <!-- 迷惘 -->
-<div class="modal fade px-32" id="unstable03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>迷惘</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -688,16 +714,14 @@
     </div>
 </div>
 <!-- 不安 -->
-<div class="modal fade px-32" id="unstable04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>不安</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -716,16 +740,14 @@
     </div>
 </div>
 <!-- 害怕 -->
-<div class="modal fade px-32" id="unstable05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>害怕</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -744,16 +766,14 @@
     </div>
 </div>
 <!-- 緊張 -->
-<div class="modal fade px-32" id="unstable06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>緊張</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -772,16 +792,14 @@
     </div>
 </div>
 <!-- 焦慮 -->
-<div class="modal fade px-32" id="unstable07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>焦慮</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -800,16 +818,14 @@
     </div>
 </div>
 <!-- 恐懼 -->
-<div class="modal fade px-32" id="unstable08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addUnstable08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-unstable">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>恐懼</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -828,18 +844,16 @@
     </div>
 </div>
 
-<!-- 驚訝類 -->
+<!-- 驚訝類 + -->
 <!-- 錯愕 -->
-<div class="modal fade px-32" id="amazed01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAmazed01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-amazed">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>錯愕</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -858,16 +872,14 @@
     </div>
 </div>
 <!-- 驚訝 -->
-<div class="modal fade px-32" id="amazed02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAmazed02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-amazed">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>驚訝</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -886,16 +898,14 @@
     </div>
 </div>
 <!-- 驚喜 -->
-<div class="modal fade px-32" id="amazed03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAmazed03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-amazed">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>驚喜</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -914,16 +924,14 @@
     </div>
 </div>
 <!-- 震驚 -->
-<div class="modal fade px-32" id="amazed04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAmazed04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-amazed">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>震驚</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -942,18 +950,16 @@
     </div>
 </div>
 
-<!-- 低落類 -->
+<!-- 低落類 + -->
 <!-- 無奈 -->
-<div class="modal fade px-32" id="sadness01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>無奈</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -972,16 +978,14 @@
     </div>
 </div>
 <!-- 挫折 -->
-<div class="modal fade px-32" id="sadness02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>挫折</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1000,16 +1004,14 @@
     </div>
 </div>
 <!-- 失望 -->
-<div class="modal fade px-32" id="sadness03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>失望</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1028,16 +1030,14 @@
     </div>
 </div>
 <!-- 無力 -->
-<div class="modal fade px-32" id="sadness04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>無力</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1056,16 +1056,14 @@
     </div>
 </div>
 <!-- 沮喪 -->
-<div class="modal fade px-32" id="sadness05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>沮喪</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1084,16 +1082,14 @@
     </div>
 </div>
 <!-- 難過 -->
-<div class="modal fade px-32" id="sadness06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>難過</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1112,16 +1108,14 @@
     </div>
 </div>
 <!-- 無助 -->
-<div class="modal fade px-32" id="sadness07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>無助</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1140,16 +1134,14 @@
     </div>
 </div>
 <!-- 悲傷 -->
-<div class="modal fade px-32" id="sadness08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>悲傷</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1168,16 +1160,14 @@
     </div>
 </div>
 <!-- 心痛 -->
-<div class="modal fade px-32" id="sadness09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>心痛</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1196,16 +1186,14 @@
     </div>
 </div>
 <!-- 憂鬱 -->
-<div class="modal fade px-32" id="sadness10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>憂鬱</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1224,16 +1212,14 @@
     </div>
 </div>
 <!-- 崩潰 -->
-<div class="modal fade px-32" id="sadness11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>崩潰</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1252,16 +1238,14 @@
     </div>
 </div>
 <!-- 絕望 -->
-<div class="modal fade px-32" id="sadness12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addSadness12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-sadness">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>絕望</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1282,16 +1266,14 @@
 
 <!-- 討厭類 -->
 <!-- 無聊 -->
-<div class="modal fade px-32" id="hate01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>無聊</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1310,16 +1292,14 @@
     </div>
 </div>
 <!-- 厭倦 -->
-<div class="modal fade px-32" id="hate02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>厭倦</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1338,16 +1318,14 @@
     </div>
 </div>
 <!-- 自卑 -->
-<div class="modal fade px-32" id="hate03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>自卑</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1366,16 +1344,14 @@
     </div>
 </div>
 <!-- 討厭 -->
-<div class="modal fade px-32" id="hate04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>討厭</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1394,16 +1370,14 @@
     </div>
 </div>
 <!-- 嫉妒 -->
-<div class="modal fade px-32" id="hate05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>嫉妒</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1422,16 +1396,14 @@
     </div>
 </div>
 <!-- 厭惡 -->
-<div class="modal fade px-32" id="hate06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>厭惡</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1450,16 +1422,14 @@
     </div>
 </div>
 <!-- 噁心 -->
-<div class="modal fade px-32" id="hate07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>噁心</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1478,16 +1448,14 @@
     </div>
 </div>
 <!-- 怨恨 -->
-<div class="modal fade px-32" id="hate08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addHate08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-hate">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>怨恨</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1508,16 +1476,14 @@
 
 <!-- 生氣類 -->
 <!-- 不滿 -->
-<div class="modal fade px-32" id="anger01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAnger01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-anger">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>不滿</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1536,16 +1502,14 @@
     </div>
 </div>
 <!-- 煩躁 -->
-<div class="modal fade px-32" id="anger02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAnger02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-anger">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>煩躁</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1564,16 +1528,14 @@
     </div>
 </div>
 <!-- 生氣 -->
-<div class="modal fade px-32" id="anger03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAnger03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-anger">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>生氣</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1592,16 +1554,14 @@
     </div>
 </div>
 <!-- 憤怒 -->
-<div class="modal fade px-32" id="anger04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAnger04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-anger">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>憤怒</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1620,16 +1580,14 @@
     </div>
 </div>
 <!-- 暴怒 -->
-<div class="modal fade px-32" id="anger05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addAnger05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-anger">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>暴怒</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1650,16 +1608,14 @@
 
 <!-- 其他類 -->
 <!-- 釋懷 -->
-<div class="modal fade px-32" id="others01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>釋懷</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1678,16 +1634,14 @@
     </div>
 </div>
 <!-- 尷尬 -->
-<div class="modal fade px-32" id="others02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>尷尬</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1706,16 +1660,14 @@
     </div>
 </div>
 <!-- 羨慕 -->
-<div class="modal fade px-32" id="others03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>羨慕</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1734,16 +1686,14 @@
     </div>
 </div>
 <!-- 愧疚 -->
-<div class="modal fade px-32" id="others04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>愧疚</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1762,16 +1712,14 @@
     </div>
 </div>
 <!-- 矛盾 -->
-<div class="modal fade px-32" id="others05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>矛盾</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1790,16 +1738,14 @@
     </div>
 </div>
 <!-- 後悔 -->
-<div class="modal fade px-32" id="others06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>後悔</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1818,16 +1764,14 @@
     </div>
 </div>
 <!-- 委屈 -->
-<div class="modal fade px-32" id="others07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>委屈</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1846,16 +1790,14 @@
     </div>
 </div>
 <!-- 寂寞 -->
-<div class="modal fade px-32" id="others08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>寂寞</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1874,16 +1816,14 @@
     </div>
 </div>
 <!-- 羞恥 -->
-<div class="modal fade px-32" id="others09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>羞恥</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1902,16 +1842,14 @@
     </div>
 </div>
 <!-- 感動 -->
-<div class="modal fade px-32" id="others10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>感動</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1930,16 +1868,14 @@
     </div>
 </div>
 <!-- 激動 -->
-<div class="modal fade px-32" id="others11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade px-32" id="addOthers11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered c-modal-xl-card">
         <div class="modal-content bg-others">
-            <div class="modal-body d-flex justify-content-between align-items-center">
+            <div class="modal-body d-flex justify-content-between align-items-center position-relative">
+                <a class="position-absolute top-0 start-100 translate-middle btn-add-card-xl"></a>
                 <div class="text">
                     <div class="title w-100 mb-20 d-flex justify-content-between  align-items-end">
                         <h2>激動</h2>
-                        <a href="modifyEmoCard.html" role="button">
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
                     </div>
                     <div class="mb-16">
                         <h3 class="mb-4">意思：</h3>
@@ -1951,76 +1887,12 @@
                     </div>
                 </div>
                 <div class="img">
-            <img class="w-100" src="https://wavemocards.com/frontend/upload/09-others/others11-excited.svg" alt="激動">
+                    <img class="w-100" src="https://wavemocards.com/frontend/upload/09-others/others11-excited.svg" alt="激動">
                 </div>
             </div>
         </div>
     </div>
-</div>    <footer class="footer py-48">
-    <div class="container">
-        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
-            <!-- logo -->
-            <div class="footer-img mb-48 mb-lg-0 me-lg-96">
-                <img class="w-100" src="/WaveemocardsDemo/assets/logo_footer-2fe4aa72.svg" alt="logo">
-            </div>
-            <!-- Developers -->
-            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
-                <h3 class="mb-16 fs-5">開發團隊</h3>
-                <ul>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
-                            <span>Product Manager</span>
-                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
-                            <span>Product Designer</span>
-                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/" target="_blank">
-                            <span>Front-End Engineer</span>
-                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/%E5%81%89%E5%87%B1-%E6%9E%97-668aaa204/" target="_blank">
-                            <span>Front-End Consultant</span>
-                            <span class="mt-4 d-block text-end">Wei-Kai Lin</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
-                            <span>Database Developer</span>
-                            <span class="mt-4 d-block text-end">Leon Wu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
-                            <span>Back-End Developer</span>
-                            <span class="mt-4 d-block text-end">Leon Wu</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="d-lg-flex justify-content-between" href="https://a8607125167.wixsite.com/mysite/about"  target="_blank">
-                            <span>Illustrator</span>
-                            <span class="mt-4 d-block text-end">Yi-Wen Fang</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Contact -->
-            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
-                <a href="mailto:info@wavemocards.com">
-                    <h3 class="mb-16 fs-5">聯絡我們</h3>
-                    <span>info@wavemocards.com</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
     
 <!--  Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
