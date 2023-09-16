@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 手機版網頁 CSS Reset 螢幕解析度 Reset -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <title>浪潮情緒卡｜我的帳號</title>
         <!-- Bootstrap icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
     <body>
         <%- include('./layout/headerLoggedIn'); -%>
@@ -22,8 +25,8 @@
                 </div>
 
                 <!-- content -->
-                <div class="my-72 d-flex justify-content-center">
-                    <img class="me-40 mb-16" src="../assets/images/rocket.svg" alt="rocket">
+                <div class="my-72 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-start">
+                    <img class="me-40 mb-16" src="../assets/images/rocket.svg" style="width: 209px;" alt="rocket">
                     <div class="d-flex flex-column justify-content-center text-gray-700">
                         <p class="mb-16 fs-2 fw-bold">此功能尚未開放......Sorry！</p>
                         <p class="mb-40 fs-2 fw-bold">正在火速開發中！敬請期待！</p>
