@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>浪潮情緒卡｜編輯情緒卡</title>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-b64e07e2.js"></script>
+    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-a8a97944.css">
+  </head>
+  <body>
+    <header class="header h-logined fixed-top">
+    <div class="container py-16 d-flex justify-content-between align-items-center">
+        <h1>
+            <a href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="回到首頁">浪潮情緒卡</a>
+        </h1>
+        <div class="d-lg-none position-relative">
+            <button class="px-8 py-4 btn btn-main btn-hamburger border-0 rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse" style="position: absolute; right: 0; top: 40px;" id="collapseExample">
+                <div class="p-0 card card-body rounded-2 border-2 border-main-tint01" style="width: 160px;">
+                    <ul>
+                        <li>
+                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="aboutEmotions.html">認識情緒</a>
+                        </li>
+                        <li>
+                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="findMyEmotions.html">找尋我的情緒</a>
+                        </li>
+                        <li>
+                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="myRecords.html">我的紀錄</a>
+                        </li>
+                        <li>
+                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="sharedByOthers.html">他人的分享</a>
+                        </li>
+                        <li>
+                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="account.html">我的帳戶</a>
+                        </li>
+                        <li>
+                            <a class="d-block px-16 py-12 link-gray-600 btn-hover-main-tint02 rounded-2" href="#">登出</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="d-none d-lg-flex justify-content-between align-items-center mb-0 ps-0">
+            <li>
+                <a href="aboutEmotions.html" class="px-4 py-8" data-bs-toggle="tooltip" data-bs-placement="bottom" title="認識情緒與情緒卡">認識情緒</a>
+            </li>
+            <li class="ms-16">
+                <a href="findMyEmotions.html" class="px-4 py-8" data-bs-toggle="tooltip" data-bs-placement="bottom" title="選擇與紀錄我的情緒">找尋我的情緒</a>
+            </li>
+            <li class="ms-16">
+                <a href="myRecords.html" class="px-4 py-8" data-bs-toggle="tooltip" data-bs-placement="bottom" title="觀看我的情緒紀錄與分析">我的紀錄</a>
+            </li>
+            <li class="ms-16">
+                <a href="sharedByOthers.html" class="px-4 py-8" data-bs-toggle="tooltip" data-bs-placement="bottom" title="觀看他人分享的情緒紀錄">他人的分享</a>
+            </li>
+            <li class="ms-16">
+                <a href="account.html" class="profile" data-bs-toggle="tooltip" data-bs-placement="bottom" title="管理我的帳戶">
+                    <i class="bi bi-person-fill"></i>
+                    <i class="bi bi-person-fill-gear"></i>
+                </a>
+            </li>
+            <li class="ms-16">
+                <a href="#" class="logout" data-bs-toggle="tooltip" data-bs-placement="bottom" title="登出">
+                    <i class="bi bi-door-closed-fill"></i>
+                    <i class="bi bi-door-open-fill"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <main>
+        <div class="container py-16 pt-72" id="top">
+            <!-- 標題欄 -->
+            <div class="titleBar d-flex justify-content-between align-items-center">
+                <h2>編輯情緒卡</h2>
+                <div class="nav-btn d-flex justify-content-end">
+                    <a class="btn btn-outline-main c-btn" href="emoCardsClassified.html">取消</a>
+                </div>
+            </div>
+    
+            <!-- 表單區 -->
+            <div class="emoForm">
+                <form action="" method="post" class="needs-validation" novalidate>
+                    <!-- 上傳圖片 -->
+                    <div class="w-100 d-flex justify-content-center align-items-end">
+                        <div class="mb-16 addImg">
+                            <img class="w-100 h-100" src="/WaveemocardsDemo/assets/happy02-happy-e05b473c.svg" alt="">
+                            <i class="bi bi-plus-circle-fill btn-add"></i>
+                        </div>
+                    </div>
+                    <!-- 情緒詞彙 -->
+                    <div class="mb-16">
+                        <label for="disabledInput" class="form-label  d-flex justify-content-between">
+                            情緒詞彙
+                            <!-- <span class="must">*必填</span> -->
+                        </label>
+                        <input type="text" class="form-control px-20 rounded-pill" id="disabledInput" placeholder="快樂" disabled>
+                    </div>
+                    <!-- 意思 -->
+                    <div class="mb-16">
+                        <label for="addEmoDefinition" class="form-label  d-flex justify-content-between">
+                            意思
+                            <!-- <span class="must">*必填</span> -->
+                        </label>
+                        <input type="text" class="form-control px-20 rounded-pill" id="addEmoDefinition" placeholder="對事情感到滿意的反應，令人心情良好、滿足和舒暢。">
+                    </div>
+                    <!-- 例句 -->
+                    <div class="mb-16">
+                        <label for="addEmoExample" class="form-label d-flex justify-content-between">
+                            例句
+                            <!-- <span class="must">*必填</span> -->
+                        </label>
+                        <input type="text" class="form-control px-20 rounded-pill" id="addEmoExample" placeholder="放學後，我和好朋友一起去吃東西、聊天，而感到好快樂。">
+                    </div>
+                    <!-- 分類 -->
+                    <div class="mb-32">
+                        <label for="addEmoClass" class="form-label d-flex justify-content-between">
+                            分類
+                            <span class="must">*必填</span>
+                        </label>
+                        <select class="form-select px-20 rounded-pill" aria-label="Default select example" id="addEmoClass" required>
+                            <option value="快樂">快樂</option>
+                            <option value="期待">期待</option>
+                            <option value="放鬆">放鬆</option>
+                            <option value="不安">不安</option>
+                            <option value="驚訝">驚訝</option>
+                            <option value="低落">低落</option>
+                            <option value="討厭">討厭</option>
+                            <option value="生氣">生氣</option>
+                            <option value="其他">其他</option>
+                        </select>
+                    </div>
+                    <!-- 按鈕 -->
+                    <button class="w-100 mb-32 py-8 btn btn-main c-btn" type="submit">新增</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- 浮動按鈕 -->
+<div class="me-12 mb-12" style="width: 60px; position: fixed; right: 0; bottom: 0; z-index: 1030;">
+    <a href="#top" type="button" class="btn btn-main-tint01 rounded-circle shadow d-flex flex-column justify-content-center align-items-center"
+    style="width: 60px; height: 60px;">
+            <img src="/WaveemocardsDemo/assets/backToTop-1ea21c73.svg" alt="top">
+            <span class="text-white fs-10 fw-bold">TOP</span>
+    </a>
+</div>    <footer class="footer py-48">
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+            <!-- logo -->
+            <div class="footer-img mb-48 mb-lg-0 me-lg-96">
+                <img class="w-100" src="/WaveemocardsDemo/assets/logo_footer-2fe4aa72.svg" alt="logo">
+            </div>
+            <!-- Developers -->
+            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
+                <h3 class="mb-16 fs-5">開發團隊</h3>
+                <ul>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
+                            <span>Product Manager</span>
+                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
+                            <span>Product Designer</span>
+                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/" target="_blank">
+                            <span>Front-End Engineer</span>
+                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/%E5%81%89%E5%87%B1-%E6%9E%97-668aaa204/" target="_blank">
+                            <span>Front-End Consultant</span>
+                            <span class="mt-4 d-block text-end">Wei-Kai Lin</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
+                            <span>Database Developer</span>
+                            <span class="mt-4 d-block text-end">Leon Wu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
+                            <span>Back-End Developer</span>
+                            <span class="mt-4 d-block text-end">Leon Wu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-lg-flex justify-content-between" href="https://a8607125167.wixsite.com/mysite/about"  target="_blank">
+                            <span>Illustrator</span>
+                            <span class="mt-4 d-block text-end">Yi-Wen Fang</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
+                <a href="mailto:info@wavemocards.com">
+                    <h3 class="mb-16 fs-5">聯絡我們</h3>
+                    <span>info@wavemocards.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<!--  Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- toolTips on header -->
+<script src="../assets/js/toolTips.js"></script>
+
+<!-- axios -->
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>  </body>
+</html>
