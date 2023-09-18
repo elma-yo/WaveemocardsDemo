@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>浪潮情緒卡｜情緒卡-展開</title>
+    <title>浪潮情緒卡｜找尋我的情緒｜我的情緒強度</title>
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-164ef36e.js"></script>
-    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-0a733fa2.css">
+    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-dbc65e0f.js"></script>
+    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-ecab504c.css">
   </head>
   <body>
     <header class="header h-logined fixed-top">
@@ -75,478 +75,188 @@
 </header>
 
     <main>
-      <div class="container py-16 pt-72" id="top">
-        <div class="titleBar d-flex justify-content-between align-items-center">
-            <h2>情緒卡</h2>
-            <div class="nav-btn d-flex justify-content-end">
-                <a class="btn btn-outline-main c-btn" href="emoCardsClassified.html">分類</a>
-                <div class="ms-16 btn-disable">展開</div>
+        <div class="container py-16 mb-48 pt-72" id="top">
+            <!-- process bar -->
+            <div class="mt-24 d-flex justify-content-end">
+                <div class="progressBar mt-16 mb-8 px-12">
+                    <div class="position-relative m-4">
+                        <div class="progress" style="height: 2px;">
+                            <div class="progress-bar bg-main-tint01" role="progressbar" style="width: 20%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="p-num position-absolute top-0 start-0 translate-middle btn btn-sm btn-main-tint01 rounded-pill d-flex justify-content-center align-items-center">
+                            <span class="d-block">1</span>
+                        </div>
+                        <div class="p-num position-absolute top-0 start-20 translate-middle btn btn-sm btn-outline-main-tint01 rounded-pill d-flex justify-content-center align-items-center">
+                            <span class="d-block">2</span>
+                        </div>
+                        <div class="p-num position-absolute top-0 start-40 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
+                            <span class="d-block">3</span>
+                        </div>
+                        <div class="p-num position-absolute top-0 start-60 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
+                            <span class="d-block">4</span>
+                        </div>
+                        <div class="p-num position-absolute top-0 start-80 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
+                            <span class="d-block">5</span>
+                        </div>
+                        <div class="p-num position-absolute top-0 start-100 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
+                            <span class="d-block">6</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- title bar -->
+            <div class="titleBar d-lg-flex justify-content-between align-items-center">
+                <h2>我的情緒強度｜第一次</h2>
+                <div class="nav-btn d-lg-flex justify-content-end">
+                    <a class="btn btn-outline-main c-btn" href="myEmoCardsHolder.html">上一步</a>
+                    <a class="ms-16 btn btn-main c-btn d-flex justify-content-center align-items-center" href="findEmoBackground.html"><span class="ms-4">下一步</span></a>
+                </div>
+            </div>
+
+            <p class="mb-4 text-gray-550 fs-7">
+                謝謝親愛的ＯＯ努力的尋找到屬於自己的情緒卡。
+            </p>
+            <p class="mb-4 text-gray-550 fs-7">
+                在進入下一步前，想邀請ＯＯ，先 <span class="text-main fw-500">閉上眼睛，深呼吸～吐氣～</span>
+            </p>
+            <p class="mb-40 text-gray-550 fs-7">
+                並在深呼吸的過程中，問問心中的自己，<span class="text-main fw-500">剛剛挑選的情緒，其強度分別如何呢？</span><span class="fs-8">（ 1分代表最為微弱，5分代表最為強烈 ）</span>
+            </p>
+
+            <!-- 尚未設定form action內濃 -->
+            <form action="#">
+                <!-- 1 card & point -->
+                <div class="mb-24 d-flex justify-content-between">
+                    <!-- card -->
+                    <button type="button" class="class-card me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation01">
+                        <p>期&nbsp;待</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/02-expectation/expaction01-expect.svg" alt="期待">
+                        </div>
+                    </button>
+                    <!-- point -->
+                    <div class="box-strength d-flex justify-content-between align-items-center">
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st01" id="1stEmo01Point01" value="1">
+                            <label for="1stEmo01Point01" class="form-label text-strength ">
+                                1
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st01" id="1stEmo01Point02" value="2">
+                            <label for="1stEmo01Point02" class="form-label text-strength ">
+                                2
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st01" id="1stEmo01Point03" value="3">
+                            <label for="1stEmo01Point03" class="form-label text-strength ">
+                                3
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st01" id="1stEmo01Point04" value="4">
+                            <label for="1stEmo01Point04" class="form-label text-strength ">
+                                4
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st01" id="1stEmo01Point05" value="5">
+                            <label for="1stEmo01Point05" class="form-label text-strength ">
+                                5
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 card & point -->
+                <div class="mb-24 d-flex justify-content-between">
+                    <!-- card -->
+                    <button type="button" class="class-card me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy05">
+                        <p>興&nbsp;奮</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/01-happy/happy05-excited.svg" alt="興奮">
+                        </div>
+                    </button>
+                    <!-- point -->
+                    <div class="box-strength d-flex justify-content-between align-items-center">
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st02" id="1stEmo02Point01" value="1">
+                            <label for="1stEmo02Point01" class="form-label text-strength ">
+                                1
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st02" id="1stEmo02Point02" value="2">
+                            <label for="1stEmo02Point02" class="form-label text-strength ">
+                                2
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st02" id="1stEmo02Point03" value="3">
+                            <label for="1stEmo02Point03" class="form-label text-strength ">
+                                3
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st02" id="1stEmo02Point04" value="4">
+                            <label for="1stEmo02Point04" class="form-label text-strength ">
+                                4
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st02" id="1stEmo02Point05" value="5">
+                            <label for="1stEmo02Point05" class="form-label text-strength ">
+                                5
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 card & point -->
+                <div class="mb-24 d-flex justify-content-between">
+                    <!-- card -->
+                    <button type="button" class="class-card me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable02">
+                        <p>擔&nbsp;心</p>
+                        <div class="img-box">
+                            <img src="https://wavemocards.com/frontend/upload/04-unstable/unstable02-worry.svg" alt="擔心">
+                        </div>
+                    </button>
+                    <!-- point -->
+                    <div class="box-strength d-flex justify-content-between align-items-center">
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st03" id="1stEmo03Point01" value="1">
+                            <label for="1stEmo03Point01" class="form-label text-strength ">
+                                1
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st03" id="1stEmo03Point02" value="2">
+                            <label for="1stEmo03Point02" class="form-label text-strength ">
+                                2
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st03" id="1stEmo03Point03" value="3">
+                            <label for="1stEmo03Point03" class="form-label text-strength ">
+                                3
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st03" id="1stEmo03Point04" value="4">
+                            <label for="1stEmo03Point04" class="form-label text-strength ">
+                                4
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" class="d-none" name="emoStrength1st03" id="1stEmo03Point05" value="5">
+                            <label for="1stEmo03Point05" class="form-label text-strength ">
+                                5
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-  
-        <!-- 快樂類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadHappy" href="emoCardsHappy.html">
-              <span>快</span><span>樂</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy01">
-                  <p>滿&nbsp;足</p>
-                  <div class="img-box">
-                    <img src="https://wavemocards.com/frontend/upload/01-happy/happy01-statisfy.svg" alt="滿足">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy02">
-                  <p>快&nbsp;樂</p>
-                  <div class="img-box">
-                    <img src="https://wavemocards.com/frontend/upload/01-happy/happy02-happy.svg" alt="快樂">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy03">
-                  <p>幸&nbsp;福</p>
-                  <div class="img-box">
-                    <img src="https://wavemocards.com/frontend/upload/01-happy/happy03-happiness.svg" alt="幸福">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy04">
-                  <p>自&nbsp;豪</p>
-                  <div class="img-box">
-                    <img src="https://wavemocards.com/frontend/upload/01-happy/happy04-proud.svg" alt="自豪">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy05">
-                  <p>興&nbsp;奮</p>
-                  <div class="img-box">
-                    <img src="https://wavemocards.com/frontend/upload/01-happy/happy05-excited.svg" alt="興奮">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy06">
-                  <p>痛&nbsp;快</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/happy06-cheerful-00cd8050.svg" alt="痛快">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-happy link-gray-900 class-card-happy" data-bs-toggle="modal" data-bs-target="#happy07">
-                  <p>狂&nbsp;喜</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/happy07-ecstasy-e29c3e15.svg" alt="狂喜">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 期待類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadExpectation" href="emoCardsExpectation.html">
-              <span>期</span><span>待</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation01">
-                  <p>期&nbsp;待</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/expaction01-expect-ac34e17e.svg" alt="期待">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-expectation link-gray-900 class-card-expectation " data-bs-toggle="modal" data-bs-target="#expectation02">
-                  <p class="px-0">有信心</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/expaction02-confidence-b04d1fce.svg" alt="有信心">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation03">
-                  <p>充滿興趣</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/expaction03-interested-5e3ddeae.svg" alt="充滿興趣">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-expectation link-gray-900 class-card-expectation" data-bs-toggle="modal" data-bs-target="#expectation04">
-                  <p>渴望</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/expaction04-desire-159c7371.svg" alt="渴望">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 安心類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadRelived" href="emoCardsRelived.html">
-              <span>安</span><span>心</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-relived link-gray-900 class-card-relived" data-bs-toggle="modal" data-bs-target="#relived01">
-                  <p>舒&nbsp;服</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/relived01-comfortable-574bdd5e.svg" alt="舒服">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-relived link-gray-900 class-card-relived" data-bs-toggle="modal" data-bs-target="#relived02">
-                  <p>放&nbsp;鬆</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/relived02-relax-211bb35c.svg" alt="放鬆">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-relived link-gray-900 class-card-relived" data-bs-toggle="modal" data-bs-target="#relived03">
-                  <p>平&nbsp;靜</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/relived03-calm-db55068f.svg" alt="平靜">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-relived link-gray-900 class-card-relived" data-bs-toggle="modal" data-bs-target="#relived04">
-                  <p>安&nbsp;心</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/relived04-relieved-c9c73162.svg" alt="安心">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-relived link-gray-900 class-card-relived" data-bs-toggle="modal" data-bs-target="#relived05">
-                  <p>自&nbsp;在</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/relived05-ease-0c5f0017.svg" alt="自在">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-relived link-gray-900 class-card-relived" data-bs-toggle="modal" data-bs-target="#relived06">
-                  <p>信&nbsp;任</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/relived06-trust-370ab49c.svg" alt="信任">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 不安類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadUnstable" href="emoCardsUnstable.html">
-              <span>不</span><span>安</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable01">
-                  <p>害&nbsp;羞</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable01-shy-b124d67c.svg" alt="害羞">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable02">
-                  <p>擔&nbsp;心</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable02-worry-b7e66f2c.svg" alt="擔心">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable03">
-                  <p>迷&nbsp;惘</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable03-confused-aea38c04.svg" alt="迷惘">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable04">
-                  <p>不&nbsp;安</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable04-anxious-902be327.svg" alt="不安">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable05">
-                  <p>害&nbsp;怕</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable05-afraid-55734bc5.svg" alt="害怕">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable06">
-                  <p>緊&nbsp;張</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable06-nervous-3a9a0f87.svg" alt="緊張">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable07">
-                  <p>焦&nbsp;慮</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable07-anxious-d774ca22.svg" alt="焦慮">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-unstable link-gray-900 class-card-unstable" data-bs-toggle="modal" data-bs-target="#unstable08">
-                  <p>恐&nbsp;懼</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/unstable08-fear-8e160d0a.svg" alt="恐懼">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 驚訝類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadAmazed" href="emoCardsAmazed.html">
-              <span>驚</span><span>訝</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-amazed link-gray-900 class-card-amazed" data-bs-toggle="modal" data-bs-target="#amazed01">
-                  <p>錯&nbsp;愕</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/amazed01-stunned-79b550e8.svg" alt="錯愕">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-amazed link-gray-900 class-card-amazed" data-bs-toggle="modal" data-bs-target="#amazed02">
-                  <p>驚&nbsp;訝</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/amazed02-astonishment-e2a77aa0.svg" alt="驚訝">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-amazed link-gray-900 class-card-amazed" data-bs-toggle="modal" data-bs-target="#amazed03">
-                  <p>驚&nbsp;喜</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/amazed03-surprised-3079b428.svg" alt="驚喜">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-amazed link-gray-900 class-card-amazed" data-bs-toggle="modal" data-bs-target="#amazed04">
-                  <p>震&nbsp;驚</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/amazed04-shocked-1a9e263a.svg" alt="震驚">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 低落類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadSadness" href="emoCardsSadness.html">
-              <span>低</span><span>落</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness01">
-                  <p>無&nbsp;奈</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness01-helpless-cd820c4c.svg" alt="無奈">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness02">
-                  <p>挫&nbsp;折</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness02-setback-a7de75a4.svg" alt="挫折">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness03">
-                  <p>失&nbsp;望</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness03-disappointed-e66e61da.svg" alt="失望">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness04">
-                  <p>無&nbsp;力</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness04-powerless-575fbb27.svg" alt="無力">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness05">
-                  <p>沮&nbsp;喪</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness05-frustrated-384c9518.svg" alt="沮喪">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness06">
-                  <p>難&nbsp;過</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness06-sad-17e6555f.svg" alt="難過">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness07">
-                  <p>無&nbsp;助</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness07-powerless-f9b8c788.svg" alt="無助">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness08">
-                  <p>悲&nbsp;傷</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness08-sorrow-7ab5a7b1.svg" alt="悲傷">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness09">
-                  <p>心&nbsp;痛</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness09-heartache-f4566f06.svg" alt="心痛">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness10">
-                  <p>憂&nbsp;鬱</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness10-depressed-1aa012dc.svg" alt="憂鬱">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness11">
-                  <p>崩&nbsp;潰</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness11-collapse-12653bef.svg" alt="崩潰">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-sadness link-gray-900 class-card-sadness" data-bs-toggle="modal" data-bs-target="#sadness12">
-                  <p>絕&nbsp;望</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/sadness12-despair-7b3018f6.svg" alt="絕望">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 討厭類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadHate" href="emoCardsHate.html">
-              <span>討</span><span>厭</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate01">
-                  <p>無&nbsp;聊</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate01-boring-6d156cca.svg" alt="無聊">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate02">
-                  <p>厭&nbsp;倦</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate02-weariness-c8b3fd3e.svg" alt="厭倦">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate03">
-                  <p>自&nbsp;卑</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate03-inferiority-92243667.svg" alt="自卑">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate04">
-                  <p>討&nbsp;厭</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate04-hate-95ee8bff.svg" alt="討厭">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate05">
-                  <p>嫉&nbsp;妒</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate05-jealousy-45fdfbc0.svg" alt="嫉妒">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate06">
-                  <p>厭&nbsp;惡</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate06-disgust-ba6160d1.svg" alt="厭惡">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate07">
-                  <p>噁&nbsp;心</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate07-nausea-feb5b0e8.svg" alt="噁心">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-hate link-gray-900 class-card-hate" data-bs-toggle="modal" data-bs-target="#hate08">
-                  <p>怨&nbsp;恨</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/hate08-resentment-47a1f2c4.svg" alt="怨恨">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 生氣類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadAnger" href="emoCardsAnger.html">
-              <span>生</span><span>氣</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-anger link-gray-900 class-card-anger" data-bs-toggle="modal" data-bs-target="#anger01">
-                  <p>不&nbsp;滿</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/anger01-dissatisfied-8dbf7dd4.svg" alt="不滿">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-anger link-gray-900 class-card-anger" data-bs-toggle="modal" data-bs-target="#anger02">
-                  <p>煩&nbsp;躁</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/anger02-irritated-3bdcee6d.svg" alt="煩躁">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-anger link-gray-900 class-card-anger" data-bs-toggle="modal" data-bs-target="#anger03">
-                  <p>生&nbsp;氣</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/anger03-anger-d521d9a3.svg" alt="生氣">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-anger link-gray-900 class-card-anger" data-bs-toggle="modal" data-bs-target="#anger04">
-                  <p>憤&nbsp;怒</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/anger04-indignant-c7d24034.svg" alt="憤怒">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-anger link-gray-900 class-card-anger" data-bs-toggle="modal" data-bs-target="#anger05">
-                  <p>暴&nbsp;怒</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/anger05-rage-aeb487ab.svg" alt="暴怒">
-                  </div>
-              </button>
-          </div>
-        </div>
-        <!-- 其他類 -->
-        <div class="mb-24 d-flex flex-nowrap">
-          <a class="emoCardsHead link-gray-900 emoCardHeadOthers" href="emoCardsOthers.html">
-              <span>其</span><span>他</span>
-          </a>
-          <div class="d-flex overflow-auto">
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others01">
-                  <p>釋&nbsp;懷</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others01-release-6d1fd115.svg" alt="釋懷">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others02">
-                  <p>尷&nbsp;尬</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others02-awkward-11a0b009.svg" alt="尷尬">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others03">
-                  <p>羨&nbsp;慕</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others03-envy-74d4f093.svg" alt="羨慕">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others04">
-                  <p>愧&nbsp;疚</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others04-guilty-7cba8ce6.svg" alt="愧疚">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others05">
-                  <p>矛&nbsp;盾</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others05-conflict-f42eb9ed.svg" alt="矛盾">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others06">
-                  <p>後&nbsp;悔</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others06-regret-209bae4a.svg" alt="後悔">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others07">
-                  <p>委&nbsp;屈</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others07-injustice-3d35b2dd.svg" alt="委屈">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others08">
-                  <p>寂&nbsp;寞</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others08-loneliness-5da3c966.svg" alt="寂寞">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others09">
-                  <p>羞&nbsp;恥</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others09-shame-9118d9e2.svg" alt="羞恥">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others10">
-                  <p>感&nbsp;動</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others10-touching-62972dab.svg" alt="感動">
-                  </div>
-              </button>
-              <button type="button" class="class-card mb-12 me-16 bg-others link-gray-900 class-card-others" data-bs-toggle="modal" data-bs-target="#others11">
-                  <p>激&nbsp;動</p>
-                  <div class="img-box">
-                    <img src="/WaveemocardsDemo/assets/others11-excited-69e488bf.svg" alt="激動">
-                  </div>
-              </button>
-          </div>
-        </div>
-      </div>
     </main>
 
     <!-- 浮動按鈕 -->
@@ -556,8 +266,72 @@
             <img src="/WaveemocardsDemo/assets/backToTop-1ea21c73.svg" alt="top">
             <span class="text-white fs-10 fw-bold">TOP</span>
     </a>
-</div>
-    <!-- Modal -->
+</div>    
+    <footer class="footer py-48">
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
+            <!-- logo -->
+            <div class="footer-img mb-48 mb-lg-0 me-lg-96">
+                <img class="w-100" src="/WaveemocardsDemo/assets/logo_footer-2fe4aa72.svg" alt="logo">
+            </div>
+            <!-- Developers -->
+            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
+                <h3 class="mb-16 fs-5">開發團隊</h3>
+                <ul>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
+                            <span>Product Manager</span>
+                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
+                            <span>Product Designer</span>
+                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/" target="_blank">
+                            <span>Front-End Engineer</span>
+                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/%E5%81%89%E5%87%B1-%E6%9E%97-668aaa204/" target="_blank">
+                            <span>Front-End Consultant</span>
+                            <span class="mt-4 d-block text-end">Wei-Kai Lin</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
+                            <span>Database Developer</span>
+                            <span class="mt-4 d-block text-end">Leon Wu</span>
+                        </a>
+                    </li>
+                    <li class="mb-8">
+                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
+                            <span>Back-End Developer</span>
+                            <span class="mt-4 d-block text-end">Leon Wu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-lg-flex justify-content-between" href="https://a8607125167.wixsite.com/mysite/about"  target="_blank">
+                            <span>Illustrator</span>
+                            <span class="mt-4 d-block text-end">Yi-Wen Fang</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
+                <a href="mailto:info@wavemocards.com">
+                    <h3 class="mb-16 fs-5">聯絡我們</h3>
+                    <span>info@wavemocards.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>    <!-- Modal -->
 <!-- 快樂類 -->
 <!-- 滿足 -->
 <div class="modal fade px-32" id="happy01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2719,72 +2493,7 @@
             </div>
         </div>
     </div>
-</div>    
-    <footer class="footer py-48">
-    <div class="container">
-        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
-            <!-- logo -->
-            <div class="footer-img mb-48 mb-lg-0 me-lg-96">
-                <img class="w-100" src="/WaveemocardsDemo/assets/logo_footer-2fe4aa72.svg" alt="logo">
-            </div>
-            <!-- Developers -->
-            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
-                <h3 class="mb-16 fs-5">開發團隊</h3>
-                <ul>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
-                            <span>Product Manager</span>
-                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/"  target="_blank">
-                            <span>Product Designer</span>
-                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/shu-ping-yu-238655268/" target="_blank">
-                            <span>Front-End Engineer</span>
-                            <span class="mt-4 d-block text-end">Shu-Ping Yu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/%E5%81%89%E5%87%B1-%E6%9E%97-668aaa204/" target="_blank">
-                            <span>Front-End Consultant</span>
-                            <span class="mt-4 d-block text-end">Wei-Kai Lin</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
-                            <span>Database Developer</span>
-                            <span class="mt-4 d-block text-end">Leon Wu</span>
-                        </a>
-                    </li>
-                    <li class="mb-8">
-                        <a class="d-lg-flex justify-content-between" href="https://www.linkedin.com/in/techleon/" target="_blank">
-                            <span>Back-End Developer</span>
-                            <span class="mt-4 d-block text-end">Leon Wu</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="d-lg-flex justify-content-between" href="https://a8607125167.wixsite.com/mysite/about"  target="_blank">
-                            <span>Illustrator</span>
-                            <span class="mt-4 d-block text-end">Yi-Wen Fang</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Contact -->
-            <div class="footer-text-box mb-48 mb-lg-0 me-lg-56">
-                <a href="mailto:info@wavemocards.com">
-                    <h3 class="mb-16 fs-5">聯絡我們</h3>
-                    <span>info@wavemocards.com</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
     
 <!--  Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
