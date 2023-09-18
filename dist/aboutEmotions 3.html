@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>浪潮情緒卡｜找尋我的情緒｜我的情緒故事-背景篇</title>
+    <title>浪潮情緒卡｜認識情緒</title>
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-d27c9af7.js"></script>
-    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-49979b85.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-164ef36e.js"></script>
+    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-0a733fa2.css">
   </head>
   <body>
     <header class="header h-logined fixed-top">
@@ -74,84 +76,77 @@
     </div>
 </header>
 
-    <main>
-        <div class="container py-16 pt-72" id="top">
-            <!-- process bar -->
-            <div class="mt-24 d-flex justify-content-end">
-                <div class="progressBar mt-16 mb-8 px-12">
-                    <div class="position-relative m-4">
-                        <div class="progress" style="height: 2px;">
-                            <div class="progress-bar bg-main-tint01" role="progressbar" style="width: 40%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="p-num position-absolute top-0 start-0 translate-middle btn btn-sm btn-main-tint01 rounded-pill d-flex justify-content-center align-items-center">
-                            <span class="d-block">1</span>
-                        </div>
-                        <div class="p-num position-absolute top-0 start-20 translate-middle btn btn-sm btn-main-tint01 rounded-pill d-flex justify-content-center align-items-center">
-                            <span class="d-block">2</span>
-                        </div>
-                        <div class="p-num position-absolute top-0 start-40 translate-middle btn btn-sm btn-outline-main-tint01 rounded-pill d-flex justify-content-center align-items-center">
-                            <span class="d-block">3</span>
-                        </div>
-                        <div class="p-num position-absolute top-0 start-60 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
-                            <span class="d-block">4</span>
-                        </div>
-                        <div class="p-num position-absolute top-0 start-80 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
-                            <span class="d-block">5</span>
-                        </div>
-                        <div class="p-num position-absolute top-0 start-100 translate-middle btn btn-sm btn-outline-gray-450 rounded-pill d-flex justify-content-center align-items-center">
-                            <span class="d-block">6</span>
-                        </div>
-                    </div>
+    <div class="aboutEmotions pt-72" id="top">
+        <div class="container py-16">
+            <!-- 標題 -->
+            <div class="titleBar d-flex justify-content-between align-items-center">
+                <h2>認識情緒</h2>
+                <div class="nav-btn d-flex justify-content-end">
+                    <div class="btn-disable">關於情緒</div>
+                    <a class="ms-16 btn btn-outline-main c-btn" href="emoCardsClassified.html">情緒卡</a>
                 </div>
             </div>
-
-            <!-- title bar -->
-            <div class="titleBar d-lg-flex justify-content-between align-items-center">
-                <h2>我的情緒故事｜背景篇</h2>
-                <div class="nav-btn d-lg-flex justify-content-end">
-                    <a class="btn btn-outline-main c-btn" href="findEmoStrength1st.html">上一步</a>
-                    <a class="ms-16 btn btn-main c-btn d-flex justify-content-center align-items-center" href="findEmoAction.html"><span class="ms-4">下一步</span></a>
+            
+            <div class="introduction py-16">
+                <div class="mb-56">
+                    <h2 class="mb-12">什麼是情緒？</h2>
+                    <p id="whatIsEmotion">
+                        情緒英文是emotion，代表流動在我們身體的能量。當我們受到刺激，引發出內心感受、身體反應、想法與行動，就是情緒。例如某人踏進後巷時，遇到一隻看來很兇惡的狗（刺激），覺得十分害怕，擔心自己被咬傷（內心感受和想法），不禁心跳加速和顫抖（身體反應），最終決定急步繞路離開（行動）。
+                    </p>
                 </div>
-            </div>
-
-            <p class="mb-4 text-gray-550 fs-7">
-                謝謝親愛的ＯＯ，真誠地感受情緒。
-            </p>
-            <p class="mb-24 text-gray-550  fs-7">
-                接下來，想邀請你潛入情緒故事中，尋找自己情緒的源頭。
-            </p>
-
-            <form action="#" method="post">
-                <!-- 第一題 -->
-                <div class="container">
-                    <div class="mb-24 row align-items-center">
-                        <div class="col-9 bg-main-tint03 rounded">
-                            <label for="whatHappened" class="py-12">
-                                <p class="mb-4 text-main fw-500  fs-7">
-                                    邀請你輕輕地闔上雙眼，在呼吸的吸吐之間，慢慢地回想，<br>在感受到「ＸＸ、ＸＸ、ＸＸ」的情緒前，發生了什麼事情呢？
-                                </p>
-                                <p class="text-gray-550 fs-8">
-                                    請在下欄中，試著寫下在感受到「ＸＸ、ＸＸ、ＸＸ」情緒的原因、事情、背景故事等。
-                                </p>
-                            </label>
-                            <textarea class="w-100 mb-12 p-12 border rounded border-gray-500 text-gray-900" id="whatHappened" name="whatHappened"></textarea>
+                <div class="mb-56">
+                    <h2 class="mb-12">6大基本情緒</h2>
+                    <div class="mb-12 d-md-flex justify-content-center">
+                        <div class="emoImg mb-20 mb-md-0 me-md-32 d-flex flex-column align-items-center">
+                            <img class="mb-4" src="/WaveemocardsDemo/assets/aboutEmo_happy-dd338e96.svg" alt="happy">
+                            <span>快樂</span>
                         </div>
-                        <div class="col-3 d-flex justify-content-end">
-                            <img class="d-block" src="/WaveemocardsDemo/assets/lime-diving-8200d2f8.svg" alt="a man is diving">
+                        <div class="emoImg mb-20 mb-md-0 me-md-32 d-flex flex-column align-items-center">
+                            <img class="mb-4" src="/WaveemocardsDemo/assets/aboutEmo_sadness-d85f8a2a.svg" alt="sadness">
+                            <span>悲傷</span>
+                        </div>
+                        <div class="emoImg mb-20 mb-md-0 me-md-32 d-flex flex-column align-items-center">
+                            <img class="mb-4" src="/WaveemocardsDemo/assets/aboutEmo_fear-ab1ea3b5.svg" alt="fear">
+                            <span>恐懼</span>
+                        </div>
+                        <div class="emoImg mb-20 mb-md-0 me-md-32 d-flex flex-column align-items-center">
+                            <img class="mb-4" src="/WaveemocardsDemo/assets/aboutEmo_hate-bd908ec9.svg" alt="hate">
+                            <span>厭惡</span>
+                        </div>
+                        <div class="emoImg mb-20 mb-md-0 me-md-32 d-flex flex-column align-items-center">
+                            <img class="mb-4" src="/WaveemocardsDemo/assets/aboutEmo_anger-489a34e5.svg" alt="anger">
+                            <span>憤怒</span>
+                        </div>
+                        <div class="emoImg mb-20 mb-md-0 me-md-32 d-flex flex-column align-items-center">
+                            <img class="mb-4" src="/WaveemocardsDemo/assets/aboutEmo_amazing-9cedb0d2.svg" alt="amazing">
+                            <span>驚訝</span>
                         </div>
                     </div>
+                    <p id="sixBasicEmotions">
+                        博物學家達爾文提及過人類有六種基本情緒，包括快樂（happiness）、悲傷（sadness）、恐懼（fear）、厭惡（disgust）、憤怒（anger）和驚訝（surprise），屬於有助人類提高生存機會的本能情緒。其他複雜情緒如興奮、委屈、自卑、妒忌、內疚、寂寞等，則是由基本情緒混合衍生而成，並且經過學習與社會化之後產生。
+                    </p>
                 </div>
-            </form>
-
-            <!-- 圖片引用來源 -->
-            <div class="text-end mb-64">
-                <span class="text-gray-500 fs-11">
-                    Illustration by <a class="link-gray-500" href="https://icons8.com/illustrations/author/iAdLsFJOKDrk" target="_blank">Tanya Krasutska</a> from <a class="link-gray-500" href="https://icons8.com/illustrations" target="_blank">Ouch!</a>
-                </span>
+                <div class="mb-56">
+                    <h2 class="mb-12">情緒無分好與壞</h2>
+                    <p id="goodOrBad">
+                        一般人習慣將情緒分為正負面，覺得快樂屬於正面情緒，悲傷、憤怒、恐懼則對人有害。其實情緒無分好與壞，每一種情緒都有其獨特意義。例如對於陌生環境感到恐懼不安，反映著對安全感的渴求，提醒我們遠離危險。悲傷時脆弱流淚，則可吸引關顧與扶持，促進人際聯繫。
+                    </p>
+                </div>
+                <div class="mb-56">
+                    <h2 class="mb-12">情緒的健康之道</h2>
+                    <p id="healthyEmotion">
+                        假如對情緒存在偏見，否定和壓抑自己的真正感覺，明明傷心卻扮開心，明明生氣卻默默忍受，很容易令身心健康出現問題。所謂情緒健康，不代表要時刻保持愉快心情，而是要有能力覺察自己的不同情緒，了解內心需要，並以健康恰當的方式去表達和調適，讓心靈回復平靜。
+                    </p>
+                </div>
+                <div class="text-end mb-64">
+                    <a class="quote" href="https://wmc.hkfyg.org.hk/emo1" target="_blank">
+                        引用文章來源：香港青年協會｜全健空間（九龍）
+                    </a>
+                </div>
             </div>
         </div>
     </main>
-
+    
     <!-- 浮動按鈕 -->
 <div class="me-12 mb-12" style="width: 60px; position: fixed; right: 0; bottom: 0; z-index: 1030;">
     <a href="#top" type="button" class="btn btn-main-tint01 rounded-circle shadow d-flex flex-column justify-content-center align-items-center"
@@ -159,7 +154,7 @@
             <img src="/WaveemocardsDemo/assets/backToTop-1ea21c73.svg" alt="top">
             <span class="text-white fs-10 fw-bold">TOP</span>
     </a>
-</div>    
+</div>
     <footer class="footer py-48">
     <div class="container">
         <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
@@ -234,6 +229,5 @@
 <script src="../assets/js/toolTips.js"></script>
 
 <!-- axios -->
-<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>    <script type="text/javascript" src="../assets/js/textarea.js"></script>
-  </body>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>  </body>
 </html>
