@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>浪潮情緒卡｜我的紀錄｜分析</title>
-    <!-- Bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-dbc65e0f.js"></script>
-    <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-ecab504c.css">
-  </head>
-  <body>
-    <header class="header h-logined fixed-top">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>浪潮情緒卡｜我的帳戶</title>
+        <!-- Bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <script type="module" crossorigin src="/WaveemocardsDemo/assets/main-73ca7a59.js"></script>
+      <link rel="stylesheet" href="/WaveemocardsDemo/assets/main-b0925128.css">
+    </head>
+    <body>
+        <header class="header h-logined fixed-top">
     <div class="container py-16 d-flex justify-content-between align-items-center">
         <h1>
             <a href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="回到首頁">浪潮情緒卡</a>
         </h1>
         <div class="d-lg-none position-relative">
-            <button class="px-8 py-4 btn btn-main btn-hamburger border-0 rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="px-8 py-4 btn btn-outline-main rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <i class="bi bi-list"></i>
             </button>
             <div class="collapse" style="position: absolute; right: 0; top: 40px;" id="collapseExample">
@@ -73,76 +73,81 @@
         </ul>
     </div>
 </header>
-    <main>
-        <div class="container py-16 pt-72" id="top">
-            <!-- 標題 -->
-            <div class="titleBar d-flex justify-content-between align-items-center">
-                <h2>我的紀錄｜分析</h2>
-                <div class="nav-btn d-flex justify-content-end">
-                    <a class="btn btn-outline-main c-btn" href="myRecords.html">紀錄</a>
-                    <div class="ms-16 btn-disable">分析</div>
-                </div>
-            </div>
-            
-            <!-- 搜尋條 & 分享 -->
-            <div class="mb-24 d-flex justify-content-between align-items-center">
-            <!-- 搜尋條 -->
-                <form action="" method="get">
-                    <div class="d-flex align-items-center">
-                    <input type="date" class="d-block input-date me-8 px-16 py-6 border border-main-tint02 border-2 rounded-pill text-main-tint01">
-                    <span class="me-8 text-main-tint01">～</span>
-                    <input type="date" class="d-block input-date me-12 px-16 py-6 border border-main-tint02 border-2 rounded-pill text-main-tint01">
-                    <button type="submit" class="btn btn-main c-btn px-24 py-8 border-0">分析</button>
-                    </div>
-                </form>
-                <!-- 分享 -->
-                <button class="rounded-pill border-0 fs-4 c-btn-icon">
-                    <i class="bi bi-box-arrow-down"></i>
-                </button>
-            </div>
 
-            <!-- 圖表區 -->
-            <div class="container mb-48">
-                <div class="row align-items-stretch">
-                    <div class="col-6">
-                        <h3 class="mb-8 py-4 fs-5 fw-bold text-main border-bottom border-main-tint02">情緒類組次數</h3>
-                        <p class="mb-36 text-gray-550">下圖為您在此期間記錄的情緒卡，在以下分類中所出現的次數的長條圖。</p>
-                        <div class="py-8 d-flex justify-content-center align-items-center">
-                            <!-- 暫時用假資料 -->
-                            <img src="/WaveemocardsDemo/assets/BarChart-7ac2a4cc.svg" alt="bar chart">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <h3 class="mb-8 py-4 fs-5 fw-bold text-main border-bottom border-main-tint02">情緒類組比例</h3>
-                        <p class="mb-36 text-gray-550">下圖為您在此期間記錄的情緒卡，在以下分類中所出現的次數比例的圖餅圖。</p>
-                        <div class="py-8 d-flex justify-content-center align-items-center">
-                            <!-- 暫時用假資料 -->
-                            <img src="/WaveemocardsDemo/assets/PieChart-5b257bec.svg" alt="pie chart">
-                        </div>
-                    </div>
+        <main>
+            <div class="container py-16 mb-48 pt-72" id="top">
+                <!-- title bar -->
+                <div class="mb-36 pt-32 pb-8 d-flex justify-content-between align-items-center border-2 border-bottom border-main-tint02">
+                    <h2 class="fs-3">我的帳戶</h2>
+                    <div class="nav-btn d-flex justify-content-end">
+                        <a class="ms-16 btn btn-outline-main c-btn" href="account.html">取消</a>
+        <form action="" method="post">
+                    <button type="submit" class="ms-16 btn btn-main c-btn d-flex justify-content-center align-items-center" href="accountMyFriends.html">儲存</button>
                 </div>
             </div>
 
-            <!-- 插畫 -->
-            <div class="d-flex justify-content-end">
-                <img src="/WaveemocardsDemo/assets/lime-analyze-ceb76195.svg" alt="analyze">
+            <!-- content -->
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <img class="mb-16" src="/WaveemocardsDemo/assets/account_illu-9a12c639.svg" alt="account illustration">
+                    <!-- 圖片引用來源 -->
+                    <div class="mb-64">
+                        <span class="text-gray-500 fs-11">
+                            Illustration by <a class="link-gray-500" href="https://icons8.com/illustrations/author/iAdLsFJOKDrk" target="_blank">Tanya Krasutska</a> from <a class="link-gray-500" href="https://icons8.com/illustrations" target="_blank">Ouch!</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <span class="mb-8 text-gray-700">Email</span>
+                    <p class="ms-4 mb-24 fs-6 fw-bold">wavemo@gmail.com</p>
+                    <div class="mb-8 d-flex justify-content-between align-items-center">
+                        <span class="text-gray-700">密碼</span>
+                    </div>
+                    <p class="ms-4 mb-24 fs-6 fw-bold">********</p>
+                    <label class="form-label w-100 mb-8 text-gray-700" for="accountName" required>用戶名稱</label>
+                    <input type="text" class="form-control w-100 mb-24 px-20 rounded-pill" id="accountName" value="wavemo">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label w-100 mb-8 text-gray-700" for="lastName">姓</label>
+                            <input type="text" class="form-control w-100 mb-24 px-20 rounded-pill" id="lastName" value="陳" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label w-100 mb-8 text-gray-700" for="firstName">名</label>
+                            <input type="text" class="form-control w-100 mb-24 px-20 rounded-pill" id="firstName" value="浪潮" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label w-100 mb-8 text-gray-700" for="birthday">生日</label>
+                            <input type="date" class="form-control w-100 mb-24 px-20 rounded-pill" id="birthday" value="2023-01-15" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label w-100 mb-8 text-gray-700" for="title">身份</label>
+                            <select class="form-select px-20 rounded-pill" aria-label="Default select example" id="title">
+                                <option value="學生">學生</option>
+                                <option value="教師">教師</option>
+                                <option value="教師">輔導教師</option>
+                                <option value="諮商師">諮商師</option>
+                                <option value="醫生">醫生</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- 圖片引用來源 -->
-            <div class="text-end mb-48">
-                <span class="text-gray-500 fs-11">
-                    Illustration by <a class="link-gray-500" href="https://icons8.com/illustrations/author/iAdLsFJOKDrk" target="_blank">Tanya Krasutska</a> from <a class="link-gray-500" href="https://icons8.com/illustrations" target="_blank">Ouch!</a>
-                </span>
+        </form>
             </div>
-        </div>
-    </main>
-    <!-- 浮動按鈕 -->
+        </main>
+
+        <!-- 浮動按鈕 -->
 <div class="me-12 mb-12" style="width: 60px; position: fixed; right: 0; bottom: 0; z-index: 1030;">
     <a href="#top" type="button" class="btn btn-main-tint01 rounded-circle shadow d-flex flex-column justify-content-center align-items-center"
     style="width: 60px; height: 60px;">
             <img src="/WaveemocardsDemo/assets/backToTop-1ea21c73.svg" alt="top">
             <span class="text-white fs-10 fw-bold">TOP</span>
     </a>
-</div>    <footer class="footer py-48">
+</div>        
+        <footer class="footer py-48">
     <div class="container">
         <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start">
             <!-- logo -->
@@ -206,7 +211,8 @@
             </div>
         </div>
     </div>
-</footer>    
+</footer>
+        
 <!--  Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -215,5 +221,5 @@
 <script src="../assets/js/toolTips.js"></script>
 
 <!-- axios -->
-<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script></body>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>    </body>
 </html>
